@@ -1,43 +1,48 @@
 import React from 'react';
-import logo from "../logo.png"
-// react font awesome imports
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from '../logo.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-scroll';
 
-const Navbar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-            <div className="container">
-                <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="@pratyushchamola_" /></a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
-                </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Services</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">How Work</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">portfolio</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">contacts</a>
-                    </li>
-                    </ul>        
-                </div>
+
+export default function Navbar() {
+   return (
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <div className="container">
+
+            <Link smooth={true} to='home'  className="navbar-brand" href="#"><a href="https://github.com/pratyushchamola"><img className="logo" src={logo} alt="Logo" /></a></Link>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul className="navbar-nav ml-auto">
+                  <li className="nav-item active">
+                     <Link smooth={true} to='home'  className="nav-link" href="#">home <span className="sr-only">(current)</span></Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link smooth={true} to='about' offset={-110} className="nav-link" href="#">about</Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link smooth={true} to='services' offset={-110} className="nav-link" href="#">skills</Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link smooth={true} to='experience' offset={-110} className="nav-link" href="#">Academics</Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link smooth={true} to='portfolio' offset={-110} className="nav-link" href="#">portfolio</Link>
+                  </li>
+
+                  <li className="nav-item">
+                     <Link smooth={true} to='contact' offset={-110} className="nav-link" href="#">contact</Link>
+                  </li>
+
+               </ul>
+
             </div>
-        </nav>
-    )
-}
 
-export default Navbar
+         </div>
+      </nav>
+   );
+};
