@@ -421,6 +421,18 @@ nav {
   margin: auto;
 }
 
+.manyMore{
+  border: 2px solid black;
+  text-align: center;
+}
+
+.manyMore a{
+  text-decoration: underline;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: large;
+}
+
 
 /*------------ OVERFLOW BOX ------------------*/
 .overflow {

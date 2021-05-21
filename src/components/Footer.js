@@ -19,9 +19,7 @@ const Footer = () => {
                         <div className='d-flex'>
                             <p>New Delhi, India</p>
                         </div>
-                        {/* <div className='d-flex'>
-                            <a href='tel:901-425-5525'>(901)-525-5525</a>
-                        </div> */}
+                        
                         <div className='d-flex'>
                             <a href='mailto:pratyushchamola@gmail.com'>
                                 pratyushchamola@gmail.com
