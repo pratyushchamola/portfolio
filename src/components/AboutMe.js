@@ -11,14 +11,13 @@ const AboutMe = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-6 col-xm-12 p">
+                <div className="col-lg-6 col-xm-12 p looks">
                     <h1 className="about-heading">about me</h1>
                     <p className="about-me-para">
-                        Hello! I am Pratyush, Delhi based Engineering Student.
-                        I'm a Full-Stack Web Developer, using MERN stack, and
-                        currently getting better with python Django.
-                        I create cross-platform, responsive web applications.
-                        I am fond of backend.
+                        Hello!, I'm <span className="name">Pratyush Chamola</span><br/>
+                        Delhi based Computer Science Engineering Student,<br/>
+                        Full-Stack Web Developer, <b>(MERN stack).</b><br/>
+                        open-source enthusiast.
                     </p>
                 </div>
             </div>
