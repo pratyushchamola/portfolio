@@ -133,6 +133,11 @@ const Portfolio = () => {
                   <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
               </div>
               </div>
+  
+            </div>
+
+            <div className="row justify-content-center manyMore">
+              <a href="https://github.com/pratyushchamola/" target="_blank"><p>...and many more here</p></a>
             </div>
           </div>
           <PopupboxContainer {...popupboxConfigInstagram} />

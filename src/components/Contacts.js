@@ -46,8 +46,7 @@ const sendEmail = (serviceID, templateID, variables, userID) => {
 			<div className='text-center'>
 				<h1>contact me</h1>
 				<p>
-					Fill out the form, briefly describe your project, and I will
-					contact you as soon as possible.
+					For queries, suggestions.....
 				</p>
 				<span className='success-message'>{successMessage}</span>
 			</div>
@@ -142,9 +141,9 @@ const sendEmail = (serviceID, templateID, variables, userID) => {
 									{...register("description",{
 										required: 'A Brief Message is required!',
 										minLength: {
-											value: 30,
+											value: 10,
 											message:
-												'Your message must be at least 30 characters!',
+												'Your message must be at least 10 characters!',
 										},
 									})}
 								></textarea>
