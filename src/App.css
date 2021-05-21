@@ -473,14 +473,21 @@ nav {
 .hyper-link {
   cursor: pointer; 
   color: var(--primary-orange);
+  width: 100%;
+  text-align: center;
 }
 
 .hyper-link:hover {
   color: var(--primary-red);
 }
 
+
 /*------------ MEDIA ------------------*/
 @media(max-width: 768px) {
+  a.hyper-link {
+  font-size: smaller;
+  width: 80%;
+  }
   .portfolio-image-popupbox {
     width: 100%;
   }

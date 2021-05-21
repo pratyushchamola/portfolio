@@ -81,7 +81,7 @@ const Portfolio = () => {
           <>
             <img className="portfolio-image-popupbox" src={ChatApp} alt="ChatApp Project..." />
             <p>A chat app project made using <b>chatengine.io</b> api, has all the features of a chat app.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/pratyushchamola/charcha-the-chat-app", "_blank")}>https://github.com/pratyushchamola/charcha-the-chat-app</a>
+            <b>GitHub:</b> <a className="hyper-link gitlink" onClick={() => window.open("https://github.com/pratyushchamola/charcha-the-chat-app", "_blank")}>https://github.com/pratyushchamola/charcha-the-chat-app</a>
           </>
         )
         PopupboxManager.open({ content })
