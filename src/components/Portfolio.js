@@ -12,13 +12,13 @@ import "react-popupbox/dist/react-popupbox.css";
 
 
 
-const Pofrfolio = () => {
+const Portfolio = () => {
     const openPopupboxInstagram = () => {
         const content = (
           <>
             <img className="portfolio-image-popupbox" src={instagram} alt="Instagram Clone Project..." />
             <p>Instagram clone, comprising of its basic features.Made using Reactjs, Tailwinds CSS, and firebase as database.</p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/netflix-project")}>https://github.com/8020Coding/netflix-project</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/pratyushchamola/instagram-clone")}>https://github.com/pratyushchamola/instagram-clone</a>
           </>
         )
         PopupboxManager.open({ content })
@@ -27,7 +27,7 @@ const Pofrfolio = () => {
       const popupboxConfigInstagram = {
         titleBar: {
           enable: true,
-          text: "Instagram clone project."
+          text: "Portfolio"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -39,9 +39,7 @@ const Pofrfolio = () => {
           <>
             <img className="portfolio-image-popupbox" src={Fitbit} alt="Fitbit Project..." />
             <p>Fitbit a full-stack web app, where user(s) are keep a log of their exercises. Build using MERN stack.</p>
-            <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://city-guide-app-project.herokuapp.com/", "_blank")}>https://city-guide-app-project.herokuapp.com/</a>
-            <br />
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/city-guide-app", "_blank")}>https://github.com/8020Coding/city-guide-app</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/pratyushchamola/fitbit", "_blank")}>https://github.com/pratyushchamola/fitbit</a>
           </>
         )
         PopupboxManager.open({ content })
@@ -50,7 +48,7 @@ const Pofrfolio = () => {
       const popupboxConfigFitbit = {
         titleBar: {
           enable: true,
-          text: "Fitbit - exercise tracker project."
+          text: "Portfolio"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -62,9 +60,7 @@ const Pofrfolio = () => {
           <>
             <img className="portfolio-image-popupbox" src={Ecommercejs} alt="Ecommercejs Project..." />
             <p>Ecommercejs is an e-commerce web service made with the help of ecommercejs.com api, which handles the backend.</p>
-            {/* <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a>
-            <br /> */}
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/portfilio", "_blank")}>https://github.com/8020Coding/portfilio</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/pratyushchamola/ecommercejs", "_blank")}>https://github.com/pratyushchamola/ecommercejs</a>
           </>
         )
         PopupboxManager.open({ content })
@@ -73,7 +69,7 @@ const Pofrfolio = () => {
       const popupboxConfigEcommercejs = {
         titleBar: {
           enable: true,
-          text: "Ecommercejs api project."
+          text: "Portfolio"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -85,9 +81,7 @@ const Pofrfolio = () => {
           <>
             <img className="portfolio-image-popupbox" src={ChatApp} alt="ChatApp Project..." />
             <p>A chat app project made using <b>chatengine.io</b> api, has all the features of a chat app.</p>
-            <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://react-redux-task-manager.herokuapp.com/", "_blank")}>https://react-redux-task-manager.herokuapp.com/</a>
-            <br />
-            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/task-manager", "_blank")}>https://github.com/8020Coding/task-manager</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/pratyushchamola/charcha-the-chat-app", "_blank")}>https://github.com/pratyushchamola/charcha-the-chat-app</a>
           </>
         )
         PopupboxManager.open({ content })
@@ -96,7 +90,7 @@ const Pofrfolio = () => {
       const popupboxConfigChatApp = {
         titleBar: {
           enable: true,
-          text: "ChatApp project using chatengine.io api."
+          text: "Portfolio"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -149,5 +143,5 @@ const Pofrfolio = () => {
       )
     }
     
-    export default Pofrfolio;
+    export default Portfolio;
         
