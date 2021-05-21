@@ -1,2 +1,2 @@
-##React PortFolio
-Portfolio made with Reactjs, bootstrap and other libraries.
+**React PortFolio**<br/>
+Portfolio made using Reactjs, bootstrap and other libraries.
